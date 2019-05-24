@@ -3,9 +3,7 @@
 ---
 @charset "utf-8";
 
-$output-bourbon-deprecation-warnings: false;
-
-@import "bourbon";
+@import "bourbon/bourbon";
 
 @import "variables";
 @import "placeholders";
