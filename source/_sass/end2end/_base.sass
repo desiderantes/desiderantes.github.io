@@ -20,6 +20,22 @@ figure
   background: darken($base-background-color, 3%)
   padding: $base-spacing 0
 
+.grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 1rem
+
+.grid > div
+  background: darken($base-background-color, 6%)
+  padding: 1.5rem
+  border-radius: 1rem
+
+.text-wrap
+  text-overflow: ellipsis
+  /* Required for text-overflow to do anything */
+  white-space: nowrap
+  overflow: hidden
+
 .container
   max-width: $phone-large
   margin-left: auto

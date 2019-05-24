@@ -1,11 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Mario Daniel Ruiz Saavedra is a software developer from Colombia. You can use his short name “Mario Ruiz” if the original is too long. He specialises in Java and Kotlin development with Spring, jOOQ, and PostgreSQL; but blogs mostly about Vala, GTK+, and free software.

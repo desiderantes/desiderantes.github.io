@@ -1,13 +1,24 @@
 # Build settings
-permalink: /blog/:year/:title/
+permalink: /:year/:month/:day/:title/
 markdown: kramdown
-highlighter: pygments
-plugins: [jekyll-paginate-v2]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+  - jekyll-paginate
 
-pagination:
-  enabled: true
-  per_page: 3
-  permalink: "/page/:num/"
+paginate: 5
+paginate_path: "/blog/page/:num/"
+
+#pagination:
+#  enabled: true
+#  per_page: 10
+#  permalink:
+#  sort_field: "date"
+#  sort_reversed: true
 
 comments: true
 
@@ -18,37 +29,50 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/end2end"
+title: Desiderantes.com
+description: "Personal website of @desiderantes"
+keywords: "vala, gtk, free software, kotlin, java, backend, web"
+url: http://desiderantes.com
+baseurl: ""
 
-google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "nandothemes"
-disqus_site_shortname: "nandothemes"
+google_analytics: UA-140395998-1
+repo: http://github.com/desiderantes/desiderantes.github.io
+disqus_shortname: "desiderantes"
+disqus_site_shortname: "desiderantes"
 
 # Author settings
 author:
-  name: Fernando Moreira
-  job: Frontend Engineer
-  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  name: Mario Daniel Ruiz Saavedra
+  job: Software Developer
+  username: desiderantes
+  bio: "Free software supporter, dog person, elementaryOS user"
   thumb: /images/author.jpg
-  email: nandomoreira.me@gmail.com
-  url: https://nandomoreira.me/
-  github: https://github.com/nandomoreirame
-  twitter: https://twitter.com/umdevux
-  facebook: https://facebook.com/umdevux
-  linkedin: https://linkedin.com/in/nandomoreirame
+  email: desiderantes93@gmail.com
+  url: https://desiderantes.com/
+  github: https://github.com/desiderantes
+  twitter: https://twitter.com/desiderantes
+  facebook: https://facebook.com/desiderantes
+  keybase: https://keybase.io/desiderantes
+  linkedin: https://linkedin.com/in/desiderantes
+  paypal: https://paypal.me/desiderantes
+
+projects:
+  sort_by: stars
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 10
+  exclude:
+    forks: true
+    projects:
 
 # navbar pages
 navbar:
   - slug: about
     title: About
-  - slug: icons
-    title: Icons
   - slug: blog
     title: Blog
+  - slug: projects
+    title: Projects
 
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
