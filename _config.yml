@@ -9,6 +9,7 @@ plugins:
   - jekyll-github-metadata
   - jemoji
   - jekyll-paginate
+  - bourbon
 
 paginate: 5
 paginate_path: "/blog/page/:num/"
