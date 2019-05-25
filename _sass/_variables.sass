@@ -1,4 +1,8 @@
 // Typography
+
+$helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif
+$monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace
+
 $base-font-family: "Open Sans", $helvetica
 $heading-font-family: $base-font-family
 $monospace-font-family: "Source Code Pro", $monospace
@@ -42,7 +46,7 @@ $base-border: 1px solid $base-border-color
 
 // Background Colors
 $base-background-color: $white-color
-$secondary-background-color: tint($base-border-color, 75%)
+$secondary-background-color: mix(#fff,$base-border-color, 75%)
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06)

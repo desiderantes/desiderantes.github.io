@@ -36,7 +36,7 @@ select[multiple=multiple]
   width: 100%
 
   &:hover
-    border-color: shade($base-border-color, 20%)
+    border-color: mix(#000,$base-border-color, 20%)
 
   &:focus
     border-color: $action-color
@@ -44,7 +44,7 @@ select[multiple=multiple]
     outline: none
 
   &:disabled
-    background-color: shade($base-background-color, 5%)
+    background-color: mix(#000,$base-background-color, 5%)
     cursor: not-allowed
 
     &:hover
