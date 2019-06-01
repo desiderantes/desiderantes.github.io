@@ -22,13 +22,14 @@ figure
 
 .grid
   display: grid
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(1, auto)
   grid-gap: 1rem
 
-.grid > div
-  background: darken($base-background-color, 6%)
-  padding: 1.5rem
+.grid > .card
+  background: darken($base-background-color, 1%)
+  padding: 1rem
   border-radius: 1rem
+  max-width: 60%
 
 .text-wrap
   text-overflow: ellipsis
