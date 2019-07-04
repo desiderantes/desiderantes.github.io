@@ -76,4 +76,8 @@ navbar:
   - slug: projects
     title: Projects
 
+misc:
+  dog: /images/dog.jpg
+  palm_trees: /images/palm_trees.jpg
+
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
