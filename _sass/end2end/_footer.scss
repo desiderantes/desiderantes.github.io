@@ -1,0 +1,11 @@
+/* Site footer */
+.site-footer {
+  background-color: $white-color;
+  border-top: 1px solid rgba($light-gray-color, 0.5);
+  padding: $base-spacing;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}

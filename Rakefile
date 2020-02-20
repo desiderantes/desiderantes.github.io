@@ -13,11 +13,11 @@ GITHUB_REPO_BRANCH = 'gh-pages'
 SOURCE = 'source/'
 DEST = '_site'
 CONFIG = {
-  'layouts' => File.join(SOURCE, '_layouts'),
-  'posts' => File.join(SOURCE, '_posts'),
-  'post_ext' => 'md',
-  'categories' => File.join(SOURCE, 'categories'),
-  'tags' => File.join(SOURCE, 'tags')
+    layouts: File.join(SOURCE, '_layouts'),
+    posts: File.join(SOURCE, '_posts'),
+    post_ext: 'md',
+    categories: File.join(SOURCE, 'categories'),
+    tags: File.join(SOURCE, 'tags')
 }.freeze
 
 task default: %w[publish]
@@ -25,10 +25,10 @@ task default: %w[publish]
 desc 'Generate blog files'
 task :generate do
   Jekyll::Site.new(Jekyll.configuration(
-                     'source' => 'source/',
-                     'destination' => '_site',
-                     'config' => '_config.yml'
-                   )).process
+      source: 'source/',
+      destination: '_site',
+      config: '_config.yml'
+  )).process
 end
 
 desc 'Generate and publish blog to gh-pages'
@@ -53,7 +53,9 @@ end
 
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+  unless FileTest.directory?(CONFIG['posts'])
+    abort("rake aborted: '#{CONFIG['posts']}' directory not found.")
+  end
   title = ENV['title'] || 'New post'
 
   tags = ''
@@ -63,7 +65,7 @@ task :post do
   env_tags = ENV['tags'] || ''
   tags = strtag(env_tags)
 
-  # categorias
+  # categories
   env_cat = ENV['category'] || ''
   categories = strtag(env_cat)
 
@@ -80,7 +82,9 @@ task :post do
 
   filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
-    abort('rake aborted!') if ask("#{filename} already exists. Do you want to overwrite?", %w[y n]) == 'n'
+    if ask("#{filename} already exists. Do you want to overwrite?", %w[y n]) == 'n'
+      abort('rake aborted!')
+    end
   end
 
   puts "Creating new post: #{filename}"
@@ -108,7 +112,9 @@ task :page do
   filename = File.join(filename, 'index.html') if File.extname(filename) == ''
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, ' ').gsub(/\b\w/) { $&.upcase }
   if File.exist?(filename)
-    abort('rake aborted!') if ask("#{filename} already exists. Do you want to overwrite?", %w[y n]) == 'n'
+    if ask("#{filename} already exists. Do you want to overwrite?", %w[y n]) == 'n'
+      abort('rake aborted!')
+    end
   end
 
   slug = mount_slug(title)
@@ -130,9 +136,7 @@ end # task :page
 
 def mount_slug(title)
   slug = str_clean(title)
-  slug = slug.downcase.strip.tr(' ', '-').gsub(/[^\w-]/, '')
-
-  slug
+  slug.downcase.strip.tr(' ', '-').gsub(/[^\w-]/, '')
 end
 
 def str_clean(title)
