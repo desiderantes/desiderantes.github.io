@@ -79,5 +79,6 @@ navbar:
 misc:
   dog: /images/dog.jpg
   palm_trees: /images/palm_trees.jpg
+  resume: /docs/resume.pdf
 
 exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
