@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Replay Edits
 date: 2016-09-25 00:24:50
 published: true

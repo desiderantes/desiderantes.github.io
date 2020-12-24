@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Abandoned Vala Projects
 date:   2016-03-03 00:23:38
 comments: true

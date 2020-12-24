@@ -1,5 +1,4 @@
 ---
-layout: post
 title: On Vala and Composite Templates
 date:   2014-04-18 00:19:27
 published: true

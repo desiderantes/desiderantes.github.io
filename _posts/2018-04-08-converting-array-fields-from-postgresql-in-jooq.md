@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Converting Array fields from PostgreSQL in jOOQ
 date: 2018-04-08 04:49:03
 published: true

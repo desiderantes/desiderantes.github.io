@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Tip: Emitting the notify signal in Vala'
 date: 2017-08-13 05:09:09
 comments: true

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Unions in Vala
 date: 2018-03-22 02:32:050
 published: true

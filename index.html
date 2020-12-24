@@ -1,19 +1,7 @@
 ---
-layout: default
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-<section class="hero">
-  <div class="hero-inner">
-    <div class="container">
-      <img src="{{ site.author.thumb | prepend: site.baseurl }}" alt="my ugly face" class="dot">
-      <h1>Desiderantes<small>.com</small></h1>
-      <h3>I'm <strong itemprop="name">{{ site.author.name }}</strong> (aka {{site.author.username}}), a <em itemprop="jobTitle">{{ site.author.job }}</em>.</h3>
-      <h3>{{ site.author.bio }}</h3>
-      <a href="{{ '/about' | prepend: site.baseurl }}" class="button button-ghost" title="about">about</a>
-      <a href="{{ '/blog' | prepend: site.baseurl }}" class="button button-ghost" title="blog">blog</a>
-      <a href="{{ site.misc.resume | prepend: site.baseurl }}" class="button button-ghost" title="resume">resume</a>
-      <a href="{{ '/projects' | prepend: site.baseurl }}" class="button button-ghost" title="projects">projects</a>
-      {% include social.html %}
-    </div>
-  </div>
-</section>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Working Canon PIXMA G3010/G3110 @ macOS
 date: 2018-09-11 13:55:00
 published: true

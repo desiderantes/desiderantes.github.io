@@ -1,10 +1,9 @@
 ---
-layout: post
 title: More about Unions in Vala
 date: 2018-07-28 16:07:37
 published: true
 comments: true
-status: publish
+status: published
 categories:
 - Programming
 - Vala
