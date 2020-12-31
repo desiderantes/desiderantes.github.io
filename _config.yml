@@ -97,7 +97,7 @@ footer:
       url: "https://instagram.com/desiderantes"
     - label: "Keybase"
       icon: "fab fa-fw fa-keybase"
-      url: "https://keybase.com/desiderantes"
+      url: "https://keybase.io/desiderantes"
 
 defaults:
   # _posts
